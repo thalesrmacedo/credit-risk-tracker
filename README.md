@@ -1,16 +1,47 @@
-# React + Vite
+# Credit Risk Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em React para acompanhar e organizar as etapas de desenvolvimento de um projeto de análise de risco de crédito que se encontra no seguinte link: https://github.com/thalesrmacedo/credit-risk-decision-engine . Você pode acessar a aplicação no seguinte link: https://thalesrmacedo.github.io/credit-risk-tracker/
 
-Currently, two official plugins are available:
+## Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O projeto foi desenvolvido para facilitar o acompanhamento das diferentes etapas de um projeto de análise de dados que estou estruturando, permitindo registrar tarefas, acompanhar o progresso e organizar as atividades por categoria. Também é possível visualizar o tempo decorrido em cada atividade.
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Adicionar novas tarefas
+- Classificar tarefas por etapa do projeto
+- Marcar e desmarcar tarefas como concluídas
+- Registrar automaticamente a data de conclusão
+- Excluir tarefas
+- Resetar todas as tarefas
+- Acompanhar o progresso geral do projeto
+- Persistir os dados utilizando 'localStorage' ( o que permite que os dados permaneçam disponíveis após fechar ou atualizar a página. Como o armazenamento é local, os dados não são compartilhados entre diferentes usuários ou dispositivos).
+- Interface responsiva e simples
 
-## Expanding the ESLint configuration
+## Etapas do projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+As tarefas podem ser organizadas nas seguintes categorias:
+
+- Definição do problema
+- Dados
+- Tratamento
+- Análise exploratória
+- Engenharia de atributos
+- Modelagem
+- Avaliação
+- Deploy
+- Documentação
+
+## Componentes
+
+App.jsx - Responsável pelo estado principal da aplicação, persistência dos dados e gerenciamento das tarefas.  
+
+TaskForm.jsx - Responsável pelo formulário de criação de novas tarefas.  
+
+TaskList.jsx - Responsável pela organização das tarefas por categoria.  
+
+TaskItem.jsx - Responsável pela representação individual de cada tarefa.
+
+**Projeto desenvolvido como parte do processo de aprendizado e construção de portfólio em desenvolvimento web e análise de dados. O uso de Inteligência Artificial permitiu a construção da base do projeto. A alimentação das informações se dará pelo usuário humano**  
+
+⭐ Se este projeto foi útil ou interessante, considere deixar uma estrela no repositório.
