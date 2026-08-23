@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/credit-risk-tracker-v1/',
+  base: '/credit-risk-tracker/',
 })
