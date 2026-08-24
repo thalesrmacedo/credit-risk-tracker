@@ -5,7 +5,7 @@ function TaskList({
   categories,
   toggleTask,
   deleteTask,
-  formatDate
+  updateLearning
 }) {
   return (
     <div>
@@ -23,17 +23,16 @@ function TaskList({
             <h3 className="category-title">
               {category}
             </h3>
+
             {categoryTasks.map((task) => (
               <TaskItem
                 key={task.id}
                 task={task}
                 toggleTask={toggleTask}
                 deleteTask={deleteTask}
-                formatDate={formatDate}
+                updateLearning={updateLearning}
               />
             ))}
-
-            <br />
           </div>
         )
       })}

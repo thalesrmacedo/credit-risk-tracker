@@ -30,42 +30,42 @@ function App() {
         title: 'Definição do problema de negócio',
         category: 'Definição do problema',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 2,
         title: 'Definição do objetivo do modelo',
         category: 'Definição do problema',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 3,
         title: 'Definição da variável target',
         category: 'Definição do problema',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 4,
         title: 'Definição do default',
         category: 'Definição do problema',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 5,
         title: 'Definição da janela de observação',
         category: 'Definição do problema',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 6,
         title: 'Definição da janela de performance',
         category: 'Definição do problema',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // DADOS
@@ -74,14 +74,14 @@ function App() {
         title: 'Levantamento das variáveis',
         category: 'Dados',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 8,
         title: 'Estruturação do dataset',
         category: 'Dados',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // TRATAMENTO
@@ -90,28 +90,28 @@ function App() {
         title: 'Análise exploratória inicial dos dados',
         category: 'Tratamento',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 10,
         title: 'Tratamento dos dados',
         category: 'Tratamento',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 11,
         title: 'Tratamento de valores ausentes',
         category: 'Tratamento',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 12,
         title: 'Tratamento de outliers',
         category: 'Tratamento',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // ANÁLISE EXPLORATÓRIA
@@ -120,7 +120,7 @@ function App() {
         title: 'Análise de correlação',
         category: 'Análise exploratória',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // ENGENHARIA DE ATRIBUTOS
@@ -129,21 +129,21 @@ function App() {
         title: 'Engenharia de atributos',
         category: 'Engenharia de atributos',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 15,
         title: 'Seleção de variáveis',
         category: 'Engenharia de atributos',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 16,
         title: 'Preparação da variável target',
         category: 'Engenharia de atributos',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // MODELAGEM
@@ -152,21 +152,21 @@ function App() {
         title: 'Divisão dos dados em treino e teste',
         category: 'Modelagem',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 18,
         title: 'Construção do modelo de Credit Scoring',
         category: 'Modelagem',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 19,
         title: 'Treinamento do modelo',
         category: 'Modelagem',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // AVALIAÇÃO
@@ -175,42 +175,42 @@ function App() {
         title: 'Avaliação do modelo',
         category: 'Avaliação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 21,
         title: 'Avaliação de métricas de classificação',
         category: 'Avaliação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 22,
         title: 'Análise de estabilidade e poder preditivo',
         category: 'Avaliação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 23,
         title: 'Interpretação do modelo',
         category: 'Avaliação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 24,
         title: 'Estimativa de Probability of Default (PD)',
         category: 'Avaliação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 25,
         title: 'Definição das regras de decisão de crédito',
         category: 'Avaliação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // MODELAGEM / ENGINE
@@ -219,21 +219,23 @@ function App() {
         title: 'Construção do Credit Risk Engine',
         category: 'Modelagem',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 27,
         title: 'Testes do Credit Risk Engine',
         category: 'Modelagem',
         completed: false,
-        completedAt: null
+        learning: ''
       },
+
+      // AVALIAÇÃO
       {
         id: 28,
         title: 'Validação do resultado',
         category: 'Avaliação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // DOCUMENTAÇÃO
@@ -242,14 +244,14 @@ function App() {
         title: 'Documentação técnica',
         category: 'Documentação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 30,
         title: 'Documentação do projeto',
         category: 'Documentação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
 
       // DEPLOY
@@ -258,28 +260,30 @@ function App() {
         title: 'Versionamento com Git/GitHub',
         category: 'Deploy',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 32,
         title: 'Deploy',
         category: 'Deploy',
         completed: false,
-        completedAt: null
+        learning: ''
       },
+
+      // DOCUMENTAÇÃO
       {
         id: 33,
         title: 'Apresentação do projeto',
         category: 'Documentação',
         completed: false,
-        completedAt: null
+        learning: ''
       },
       {
         id: 34,
         title: 'Evolução e melhorias futuras',
         category: 'Documentação',
         completed: false,
-        completedAt: null
+        learning: ''
       }
     ]
   })
@@ -300,10 +304,7 @@ function App() {
         if (task.id === id) {
           return {
             ...task,
-            completed: !task.completed,
-            completedAt: !task.completed
-              ? new Date()
-              : null
+            completed: !task.completed
           }
         }
 
@@ -322,7 +323,7 @@ function App() {
       title: newTask,
       category: newCategory,
       completed: false,
-      completedAt: null
+      learning: ''
     }
 
     setTasks([...tasks, task])
@@ -332,6 +333,21 @@ function App() {
   function deleteTask(id) {
     setTasks(
       tasks.filter((task) => task.id !== id)
+    )
+  }
+
+  function updateLearning(id, learning) {
+    setTasks(
+      tasks.map((task) => {
+        if (task.id === id) {
+          return {
+            ...task,
+            learning: learning
+          }
+        }
+
+        return task
+      })
     )
   }
 
@@ -346,14 +362,6 @@ function App() {
 
     localStorage.removeItem('creditRiskTasks')
     window.location.reload()
-  }
-
-  function formatDate(date) {
-    if (!date) {
-      return ''
-    }
-
-    return new Date(date).toLocaleDateString('pt-BR')
   }
 
   const completedTasks = tasks.filter(
@@ -373,7 +381,7 @@ function App() {
         <div>
           <h1>Credit Risk Tracker</h1>
           <p>
-            Acompanhamento do desenvolvimento do projeto
+            Diário de aprendizado do projeto
           </p>
         </div>
 
@@ -425,7 +433,7 @@ function App() {
             categories={categories}
             toggleTask={toggleTask}
             deleteTask={deleteTask}
-            formatDate={formatDate}
+            updateLearning={updateLearning}
           />
         </section>
       </main>

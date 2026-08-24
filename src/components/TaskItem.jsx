@@ -2,7 +2,7 @@ function TaskItem({
   task,
   toggleTask,
   deleteTask,
-  formatDate
+  updateLearning
 }) {
   return (
     <div className="task-item">
@@ -13,7 +13,7 @@ function TaskItem({
           onChange={() => toggleTask(task.id)}
         />
 
-        <div>
+        <div className="task-info">
           <span
             className={
               task.completed
@@ -24,11 +24,14 @@ function TaskItem({
             {task.title}
           </span>
 
-          {task.completed && (
-            <small className="task-date">
-              Concluído em: {formatDate(task.completedAt)}
-            </small>
-          )}
+          <textarea
+            className="learning-input"
+            placeholder="O que aprendi com esta etapa?"
+            value={task.learning || ''}
+            onChange={(event) =>
+              updateLearning(task.id, event.target.value)
+            }
+          />
         </div>
       </div>
 
