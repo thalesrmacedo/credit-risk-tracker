@@ -50,3 +50,27 @@ Sendo que X6 até x11 são variáveis categóricas
 A variável target foi um default = 1 ou default = 0 no mês seguinte 
 
 Inicialmente definiu-se 6 meses de observação + 6 meses de performance para o cálculo do default, no entanto, o dataset oferece 6 meses de observação para o cálculo do default no mês seguinte, o que sugere que esse dataset não está de acordo com o embasamento teórico descrito no Business Card original. Optou-se por fazer mudanças no embasamento para se adequar ao dataset, o motivo principal é que este é o primeiro projeto de data science do autor, mas o Business Card original pode ser utilizado com outras bases de dados a depender das informações disponíveis. Concluído em 26/08/2026
+
+# Tratamento
+
+### Análise exploratória inicial dos dados:
+Comandos:
+✓ read – Comando para leitura do arquivo.
+✓ head – Comando para retornar as 5 primeiras linhas.
+✓ tail – Comando para retornar as 5 últimas linhas.
+✓ shape – Comando para definir a quantidade de linhas e colunas disponíveis.
+✓ columns – Comando que retorna o nome das colunas.
+✓ dtypes – Comando que informa o tipo de dados nas colunas.
+✓ info – Comando que informa a quantidade de registros, quantidade de valores não nulos, tipo dos dados nas colunas e memória utilizada.
+✓ isnull().sum() – Comando para verificar se existem dados faltando. 
+✓ describe – Comando que apresenta mínimo e máximo, média (mean) percentis de 25%, 50% (mediana) e 75%, desvio padrão (std).
+Análise preliminar:
+* Foi realizada uma verificação preliminar da consistência dos dados, comparando os valores encontrados entre as diferentes variáveis e observando possíveis relações inesperadas. Não há dados faltando, nem duplicados. A estrutura está de acordo com o que foi apontado na documentação.
+* O dataset apresenta duas linhas de cabeçalho, por isso foi acrescentado o "header=1" no comando para corrigir o problema de leitura que afetava, principalmente, o comando dtypes
+* A análise de cardinalidade mostrou que as variáveis categóricas possuem poucos valores distintos e as variáveis relacionadas aos valores de fatura e pagamento apresentam milhares de valores diferentes. O identificador (ID) possui 30.000 valores distintos, indicando um identificador único por cliente.
+* A documentação descreve quatro categorias para EDUCATION e três para MARRIAGE, porém o dataset contém valores adicionais. O significado desses códigos não está explicitamente descrito na documentação consultada e deverá ser investigado antes do tratamento dos dados.
+* As variáveis PAY_0 a PAY_6 apresentaram valores entre -2 e 8. A documentação descreve os valores relacionados ao status de pagamento, porém existem códigos que precisam ser interpretados com cuidado, como o -2, que não foi adequadamente descrito na documentação.
+* Ao analisar a variável target descrita na documentação, verificou-se que ela possui apenas dois valores possíveis, 0 e 1, confirmando sua natureza binária. A distribuição encontrada foi de aproximadamente 77% de default = 0 e 23% de default = 1.
+* A correlação mede o quanto duas variáveis tendem a variar juntas. O valor fica entre -1 e +1. Foram observadas variáveis com baixa correlação linear com o target, mas isso não é suficiente, isoladamente, para determinar que devem ser descartadas. O ID, por sua vez, pode ser descartado por representar apenas um identificador do cliente, sem significado financeiro ou comportamental. Também foram observadas correlações relevantes entre as variáveis PAY_0 a PAY_6, o que é esperado considerando que representam o histórico de pagamento do mesmo cliente em meses diferentes.
+* A documentação deve ser utilizada como referência, mas não deve ser considerada automaticamente como uma representação perfeita dos dados. O arquivo precisa ser validado antes do início da modelagem.
+Concluído em 30/08/2026
